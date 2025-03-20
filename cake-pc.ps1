@@ -71,6 +71,13 @@ resources:
       valueName: SystemUsesLightTheme
       valueData:
         DWord: 0
+  - name: Enable Long Paths
+    type: Microsoft.Windows/Registry
+    properties:
+      keyPath:   HKLM\SYSTEM\CurrentControlSet\Control\FileSystem
+      valueName: LongPathsEnabled
+      valueData:
+        DWord: 1
   - name: Disable SMBv1
     type: Microsoft.Windows/Registry
     metadata:
